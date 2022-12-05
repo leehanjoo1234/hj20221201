@@ -8,10 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>농장정보_미리보기</h1>
+  <section class="py-5">
+	<div class="container px-4 px-lg-5 mt-5">
 	
 	
 	
+	
+	
+	
+	
+  </section>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>

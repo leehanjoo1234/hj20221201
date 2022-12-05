@@ -8,10 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>농장정보_미리보기</h1>
-	
-	
-	
+	<h1>장바구니</h1>
+
+
+
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>
