@@ -13,7 +13,7 @@
 			NOT_DATE=#{notDate},
 			NOT_VIEW=#{notView},
 			NOT_HIT=#{notHit} -->
-		FROM notice
+		FROM NOTICE
 	</select>
 
 

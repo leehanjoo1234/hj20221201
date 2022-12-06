@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/include/header.jsp" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,8 @@
 </head>
 <body>
 	<h1>자유게시판 미리보기</h1>
+	<input type="button" value="글쓰기" onclick="location.href='/freeNoteCreForm'" >
+	<form action="">
 	<div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
            <thead>
@@ -24,16 +27,18 @@
            <tbody>
              <c:forEach var="note" items="${noteList}">
              <tr>
-               <td>Tiger Nixon</td>
-               <td>System Architect</td>
-               <td>Edinburgh</td>
-               <td>61</td>
-               <td>2011/04/25</td>
-               <td>$320,800</td>
+               <td>${note.notNum}</td>
+               <td>${note.title}</td>
+               <td>${note.id}</td>
+               <td>${note.notDate}</td>
+               <td>${note.notView}</td>
+               <td>${note.notHit}</td>
              </tr>
              </c:forEach>
+            </tbody>
         </table>
    </div>
+   </form>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>

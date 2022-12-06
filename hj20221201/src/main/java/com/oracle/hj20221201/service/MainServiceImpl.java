@@ -19,7 +19,7 @@ public class MainServiceImpl implements MainService {
 		System.out.println("MainServiceImpl noticeList Start..." );
 		List<Notice> noteList = null;
 		noteList = md.noteList(note);
-		System.out.println("MainServiceImpl noteList.size()--->"+noteList.size() );
+		System.out.println("MainServiceImpl noteList.size()--->"+noteList.size());
 		return noteList;
 	}
 
